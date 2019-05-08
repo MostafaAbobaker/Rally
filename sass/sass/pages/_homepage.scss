@@ -1,0 +1,301 @@
+/*Start About*/
+.About-index {
+    padding: 80px 0;
+    h2 {
+        padding: 30px 0;
+        font-size: 3rem;
+        color: $mainColor;
+        font-weight: bold;
+        font-family: 'Charm', cursive;
+        position: relative;
+        &::after {
+            content: "About";
+            position: absolute;
+            top: -10px;
+            left: 50px;
+            font-size: 80px;
+            font-weight: bold;
+            color: rgba(#000,0.07);
+            font-family: Tahoma;
+            text-transform: uppercase;
+            font-style: italic;
+        }
+    }
+    p {
+        line-height: 1.9rem;
+        padding-right: 120px;
+        margin-bottom: 50px;
+        color: #666;
+    }
+    img {
+        border-radius: 20px;
+        box-shadow: 10px 10px 10px rgba(#000,0.3);
+    }
+}
+/*End About*/
+/*Start category*/
+.category {
+    padding: 80px 0;
+    -webkit-clip-path: polygon(100% 10%, 100% 85%, 50% 100%, 0 85%, 0 0);
+    clip-path: polygon(100% 10%, 100% 85%, 50% 100%, 0 85%, 0 0);
+    background-color: #131313;
+    color: #fff;
+    background: url(../images/texture.jpg) center center #131313;
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(#131313,0.7);
+        z-index: 1
+    }
+    
+    .category-Icon {
+        padding: 40px 0 20px;
+        position: relative;
+        z-index: 5;
+        h3 {
+            color: $mainColor;
+            padding: 20px 0;
+            font-family: 'Charm', cursive;
+            font-weight: bold;
+        }
+        p {
+            margin-bottom: 30px;
+            color: #bbb;
+            padding: 0 20px;
+        }
+    }
+}
+/*End category*/
+/*Start choose*/
+.choose {
+    padding: 50px 0 80px;
+    h2 {
+        font-size: 3rem;
+        color: $mainColor;
+        font-weight: bold;
+        font-family: 'Charm', cursive;
+        margin-bottom: 30px;
+    }
+    h2~p {
+       width: 700px;
+        margin: auto;
+        color: #666;
+        margin-bottom: 50px;
+    }
+    img {
+            width: 400px;
+            text-align: center;
+        }
+    .media {
+        margin-bottom: 30px;
+        
+        i {
+            background-color: $mainColor;
+            width: 60px;
+            height: 60px;
+            text-align: center;
+            line-height: 60px;
+            color: #fff;
+            border-radius: 10px;
+            position: relative;
+            margin-top: 10px;
+            &::after {
+                content: "";
+                position: absolute;
+                width: 1px;
+                height: 80px;
+                bottom: -80px;
+                left: 50%;
+                border-style: dashed;
+                border-color: #333;
+                border-width: 1px;
+            }
+            
+        }
+        h4 {
+            font-weight: bold;
+            font-family: 'Charm', cursive;
+            color: $mainColor;
+        }
+        &:last-of-type i::after {
+                height: 0;
+                width: 0;
+                border: none;
+            }
+    }
+}
+/*End choose*/
+/*Start guided*/
+.guided {
+    background: url(../images/matt-duncan-127528-unsplash.jpg)no-repeat bottom center fixed;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(#fff, 0.25);
+        z-index: 1;  
+    }
+    .lapel {
+        background-color: rgba(#000, 0.5);
+        margin-top: 50px;
+        padding: 10px 0;
+        color: #fff;
+        position: relative;
+        z-index: 2;
+        .guided-image {
+            text-align: center;
+            border-right: 2px solid #fff;
+            padding-right: 20px;
+            img {
+                width: 60%; 
+            }
+        }
+        h2 {
+            font-weight: bold;
+            font-family: 'Charm', cursive;
+            color: $mainColor;
+        }
+        p {
+            line-height: 1.9rem;
+            color: #eee;
+            margin-bottom: 0;
+        }
+        
+    }
+    .group {
+        position: relative;
+        z-index: 2;
+        color: #fff;
+        padding: 50px 0;
+        ul.group-list {
+            li {
+                color: #eee;
+                margin-bottom: 15px;
+                position: relative;
+                &::before {
+                    content: "\f005";
+                    position: absolute;
+                    left: -25px;
+                    top: -2px;
+                    font-family: "Font Awesome 5 Free";
+                    font-weight: 900;
+                    color: $mainColor;
+                }
+            }
+        }
+        .group-iamge {
+            text-align: center;
+            img {
+                width: 40%;
+            }
+        }
+    }
+    .website {
+        font-weight: bold;
+        font-family: 'Charm', cursive;
+        background-color: $mainColor;
+        color: #fff;
+        width: 350px;
+        font-size: 1.8rem;
+        margin: auto;
+        position: relative;
+        z-index: 5;
+        border-radius: 10px 10px 0 0;
+    }
+}
+
+/*End guided*/
+/*Start Gally*/
+.index-Gallary {
+    background-color: #131313;
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    .index-Gallary-image {
+        width: 24%;
+        position: relative;
+        transition: .5s;
+        overflow: hidden;
+        img {
+            width: 100%;
+            transition: .7s;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(#000,0.3);
+            transition: .5s;
+        }
+        &:hover img{
+            transform: scale(1.1,1.1)
+        }
+        &:hover::after {
+            background-color: transparent;
+        }
+    }
+}
+/*End Gally*/
+
+
+
+
+/*Start sponsor*/
+.sponsor {
+    background-color: #eee;
+    display: flex;
+    padding: 10px 10px;
+    justify-content: space-between;
+    align-items: center;
+    .sponsor-logo {
+        transition: .5s;
+        img {
+            -webkit-filter: grayscale(100%) blur(1px); 
+            filter: grayscale(100%) blur(1px);
+            transition: .5s;
+            width: 80%;
+        }
+        &:hover img {
+            filter: none;
+            transform: scale(1.05,1.05);
+        }
+    }
+}
+/*End sponsor*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

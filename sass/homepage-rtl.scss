@@ -1,0 +1,11 @@
+$float-left: right;
+$float-right: left;
+
+.main-header {
+   .logo {
+        float: $float-left;
+    }
+    .navbar {
+        float: $float-left;
+    } 
+}

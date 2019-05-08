@@ -1,0 +1,27 @@
+// import Var File
+@import"sass/helpers/variables";
+// import MixingsFile
+@import"sass/helpers/mixins";
+
+// import Master Page 
+@import"sass/pages/master-page";
+// import Heaser File
+@import"sass/layout/header";
+// import Grid File
+@import"sass/layout/grid";
+
+// import Home Page 
+@import"sass/pages/homepage";
+
+// import ScrollbarFile
+@import"sass/layout/scrollbar";
+
+// import Heading File
+@import"sass/components/heading";
+
+// import Button File
+@import"sass/components/buttons";
+
+// import Footer File
+@import"sass/layout/footer";
+

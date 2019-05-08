@@ -1,0 +1,79 @@
+.navbar {
+    /*position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color:transparent;
+    z-index: 999;
+    font-family: 'Charm', cursive;*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color:transparent;
+    z-index: 999;
+    font-family: 'Charm', cursive;
+    padding: 0;
+    .navbar-brand {
+        background-color: $mainColor;
+        width: 80px;
+        transform: skewX(10deg);
+        text-align: center;
+        position: relative;
+        top: 0;
+        border-radius: 5px;
+        padding: 5px ;
+        img {
+            transform: skewX(-10deg);
+            top: 2px;
+            position: relative;
+        }
+    }
+    .navbar-nav {
+        .nav-item {
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+            .nav-link {
+                color: #fff;
+                font-size: 18px;
+                position: relative;
+                transition: .5s;
+                &::after {
+                    content: "";
+                    width: 0;
+                    height: 2px;
+                    background-color: transparent;
+                    position: absolute;
+                    bottom: 0px;
+                    left: 0;
+                    border-radius: 2px;
+                    transition: .5s;
+                }
+                &:hover {
+                    color: brown;
+                }
+                &:hover::after {
+                    background-color: brown;
+                    width: 50%;
+                }
+            }
+        }
+        .nav-item.active {
+            .nav-link {
+                color: $mainColor;
+                position: relative;
+                font-weight: bold;
+                &::after {
+                    content: "";
+                    width: 50%;
+                    height: 2px;
+                    background-color: $mainColor;
+                    position: absolute;
+                    bottom: 0px;
+                    left: 0;
+                    border-radius: 2px;
+                }
+            }
+        }
+    }
+}

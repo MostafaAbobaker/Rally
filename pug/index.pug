@@ -1,0 +1,292 @@
+doctype
+html
+    head
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+        
+        
+        include include/-style.pug
+        
+        title Delta United Riders
+        
+    body
+        // Start Nav Bar
+        nav(class="navbar navbar-expand-lg " id="navbar")   
+            div.container
+                a(class="navbar-brand" href="index.html")
+                    img(src="images/RallyLogo.png" alt="logo Rally" )
+                button(class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
+                    span(class="navbar-toggler-icon")
+                div(class="collapse navbar-collapse" id="rallyNavbar") 
+                    ul(class="navbar-nav ml-auto")
+                        li(class="nav-item active")
+                            a(class="nav-link" href="index.html") Home
+                        li(class="nav-item")
+                            a(class="nav-link" href="#about.html") About    
+                        li(class="nav-item")
+                            a(class="nav-link" href="#about.html")  Event
+                        li(class="nav-item")
+                            a(class="nav-link" href="#about.html") Gallary 
+                        li(class="nav-item")
+                            a(class="nav-link" href="#about.html") Contact Us
+                        li(class="nav-item")
+                            a(class="nav-link" href="#about.html") En
+        // End Nav Bar 
+        // Start Slider
+        div(class="slider ") 
+            div(id="jssor_1")
+                //Slider Images
+                div(data-u="slides"  class="slides")
+                    div
+                        img(data-u="image" src="images/rallySlider.png")
+                        div.title
+                            h1 Delta United Riders
+                            p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                            a(href="" class="btn-submit") Read More ...
+                    div
+                        img(data-u="image" src="images/rallySliderTwo.png") 
+                        div.title
+                            h1 Are You Ready
+                            p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                            a(href="" class="btn-submit") Read More ...
+                    div
+                        img(data-u="image" src="images/rallySliderThree.png")
+                        div.title
+                            h1 Stay Connected
+                            p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                            a(href="" class="btn-submit") Read More ...
+                //Arrow Navigator
+                div(data-u="arrowleft" class="jssora093 Arrow-left" data-autocenter="2" data-scale="0.75" data-scale-left="0.75")
+                    i(class="fa fa-angle-double-left fa-2x" aria-hidden="true")
+                div(data-u="arrowright" class="jssora093 Arrow-right"  data-autocenter="2" data-scale="0.75" data-scale-right="0.75")
+                    i(class="fa fa-angle-double-right fa-2x" aria-hidden="true")
+                //
+                div(data-u="navigator" class="jssorb053 Bullet"  data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75")
+                    div(data-u="prototype" class="i")
+                        svg(viewBox="0 0 16000 16000")
+                            path(class="b" d="M11400,13800H4600c-1320,0-2400-1080-2400-2400V4600c0-1320,1080-2400,2400-2400h6800 c1320,0,2400,1080,2400,2400v6800C13800,12720,12720,13800,11400,13800z")
+        // End Slider     
+        // Start About 
+        section(class="About-index " )
+            div.container
+                div.row
+                    div.col-md-8
+                        h2(data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine") Delta United Riders
+                        p(data-aos="fade-up" data-aos-duration="3000") Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                        a(href="" class="btn-submit" data-aos="fade-up" data-aos-duration="4000") Read More 
+                    div.col-md-4
+                        img(src="images/About.png" alt="" class="img-thumbnail" data-aos="zoom-out-down")
+        // End About     
+        // Start Category 
+        section(class="category ")
+            div.container
+                div.row
+                    div(class="col-md-4" data-aos="fade-up" style="z-index:5")
+                        div(class="category-Icon text-center")
+                            div.icon
+                                i(class="fas fa-motorcycle fa-3x")
+                            h3 Motorcycles 
+                            p Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            a(href="" class="btn-submit") Read More
+                    div(class="col-md-4" data-aos="fade-up" style="z-index:5")
+                         div(class="category-Icon text-center")
+                            div.icon
+                                i(class="fab fa-cloudscale fa-3x")
+                            h3 Faster
+                            p  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                            a(href="" class="btn-submit") Read More
+                    div(class="col-md-4" data-aos="fade-up" style="z-index:5")
+                         div(class="category-Icon text-center")
+                            div.icon
+                                i(class="fas fa-flag-checkered fa-3x")
+                            h3 Start
+                            p Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            a(href="" class="btn-submit") Read More
+                    div(class="col-md-4" data-aos="fade-up" style="z-index:5")
+                        div(class="category-Icon text-center")
+                            div.icon
+                                i(class="fas fa-medal fa-3x")
+                            h3 Medalia
+                            p  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                            a(href="" class="btn-submit") Read More
+                    div(class="col-md-4" data-aos="fade-up" style="z-index:5")
+                         div(class="category-Icon text-center")
+                            div.icon
+                                i(class="fas fa-stopwatch fa-3x")
+                            h3 Time
+                            p Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            a(href="" class="btn-submit") Read More
+                    div(class="col-md-4" data-aos="fade-up" style="z-index:5")
+                         div(class="category-Icon text-center")
+                            div.icon
+                                i(class="fas fa-trophy fa-3x")
+
+                            h3 Cup
+                            p  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                            a(href="" class="btn-submit") Read More        
+                    div(class="col-md-4 mx-auto " data-aos="fade-up" style="z-index:5")
+                         div(class="category-Icon text-center")
+                            div.icon
+                                i(class="fas fa-trophy fa-3x")
+
+                            h3 Cup
+                            p Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            a(href="" class="btn-submit") Read More          
+
+        // End Category     
+        // Start Choose  
+        section(class="choose ")
+            div.container
+                h2.text-center Why Choose Us?
+                p(class=" text-center") Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                div.row
+                    div.col-md-6
+                        img(src="images/Untitled-3.png" alt="" data-aos="flip-up")
+                    div.col-md-6
+                        div(class="media" data-aos="fade-left")
+                            i(class="mr-3 fas fa-users fa-2x")
+                            div.media-body
+                                h4.mt-0 Group
+                                p Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        div(class="media" data-aos="fade-left")
+                            i(class="mr-3 fas fa-map-signs fa-2x")
+                            div.media-body
+                                h4.mt-0 Trends
+                                p Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        div(class="media" data-aos="fade-left")
+                            i(class="mr-3 fas fa-route fa-2x")
+                            div.media-body
+                                h4.mt-0 Way
+                                p Lorem Ipsum is simply dummy text of the printing and typesetting industry.        
+        // End Choose     
+        // Start Guided 
+        section.guided
+            div(class="lapel ") 
+                div.container
+                    div.row
+                        div.col-md-3
+                            div.guided-image
+                                img(src="images/motorcyclesRally.png")
+                        div.col-md-9
+                            h2 Guided Motorcycles Tours
+                            p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+            div(class="group ") 
+                div.container
+                    div.row
+                        div.col-md-3
+                            ul(class="group-list list-unstyled")
+                                li Alexandria Motorcycles week
+                                li Hurghada Summer
+                                li Luxor and Aswan winter
+                                li Marsa Matrouh spring
+
+
+                        div.col-md-6
+                            div.group-iamge
+                                img(src="images/map.png")
+                        div.col-md-3
+                            ul(class="group-list list-unstyled")                            
+                                li Luxor and Aswan winter
+                                li Hurghada Summer
+                                li Marsa Matrouh spring
+                                li Alexandria Motorcycles week
+            div(class="website text-center") DeltaUnitedRiders.com   
+
+        // End Guided     
+        // Start Gallay 
+        div.index-Gallary
+            div(class="index-Gallary-image" data-aos="fade-left")
+                img(src="images/img/180625083846-harley-davidson.jpg")
+            div(class="index-Gallary-image" data-aos="fade-left")
+                img(src="images/img/2000000006.jpg")    
+            div(class="index-Gallary-image" data-aos="fade-right")
+                img(src="images/img/2018-Indian-Springfield-Dar.jpg")
+            div(class="index-Gallary-image" data-aos="fade-right")
+                img(src="images/img/180625083846-harley-davidson.jpg") 
+        // End Gallay     
+        // Start Sponsor
+        section(class="sponsor ") 
+            div.sponsor-logo
+                img(src="images/logo/Chipsy.png")
+            div.sponsor-logo
+                img(src="images/logo/Pepsi.png")    
+            div.sponsor-logo
+                img(src="images/logo/kfc.png")
+            div.sponsor-logo
+                img(src="images/logo/red-bull.png") 
+            div.sponsor-logo
+                img(src="images/logo/Johena.png")
+            div.sponsor-logo
+                img(src="images/logo/hotel.png")
+            //div.sponsor-logo
+                img(src="images/logo/Pepsi.png")    
+            div.sponsor-logo
+                img(src="images/logo/Agilika.png")
+            div.sponsor-logo
+                img(src="images/logo/Seagull.png") 
+            div.sponsor-logo
+                img(src="images/logo/Ministry-Of-Youth-Logo.png")
+            div.sponsor-logo
+                img(src="images/logo/Egyptian_Police_Emblem.png") 
+        // End Sponsor     
+        // Start Map    
+        section.map
+            iframe(src="https://maps.google.com/maps?q=cairo&t=&z=7&ie=UTF8&iwloc=&output=embed" width="100%" height="250" frameborder="0" style="border:0")
+
+        // End Map          
+        // Start Footer
+        footer.footer
+            div.container
+                div.row
+                    div.con-md-4
+                        img(src="images/RallyLogo.png")
+
+                        h3 Contact
+                        div.address
+                            i(class="fas fa-map-marker-alt")
+                            | 66 st, AlMaadi , Cairo , Egypt.
+                        div.tel 
+                            i(class="fas fa-phone-volume")
+                            | (+2) 0111 888 8888
+                    div.col-md-6
+                        div.social
+                            div.face
+                                a(href="")
+                                    i(class="fab fa-facebook-f fa-2x")
+                            div.twitter
+                                a(href="")
+                                    i(class="fab fa-twitter fa-2x")
+                            div.instagram
+                                a(href="")
+                                    i(class="fab fa-instagram fa-2x")
+                            div.youtube
+                                a(href="")
+                                    i(class="fab fa-youtube fa-2x")
+
+
+
+                    div(class="col-md-2 link-website")
+                        h3 Category Web
+                        ul.list-unstyled
+                            li 
+                                a(href="") Home
+                            li 
+                                a(href="") About
+                            li 
+                                a(href="") Event
+                            li 
+                                a(href="") Gallary
+                            li 
+                                a(href="") Contact us
+        // End Footer          
+        // Start Copy Right 
+        footer(class="copyRight text-center")
+            div(class="copy_data text-center") Copyright  &copy; 2018 
+                a(href="http://codexhome.com/" target="_blank") Codex-Home
+                |  All Rights Reserved              
+        // End Copy Right  
+
+        include include/-script.pug
+        
+        
+        
